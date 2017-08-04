@@ -19,7 +19,7 @@
         <dependency>
             <groupId>io.ebean</groupId>
             <artifactId>ebean</artifactId>
-            <version>10.4.2-SNAPSHOT</version>
+            <version>10.4.2</version>
         </dependency>
 
         <dependency>
