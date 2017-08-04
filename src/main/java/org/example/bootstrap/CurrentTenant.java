@@ -1,6 +1,6 @@
 package org.example.bootstrap;
 
-import com.avaje.ebean.config.CurrentTenantProvider;
+import io.ebean.config.CurrentTenantProvider;
 
 class CurrentTenant implements CurrentTenantProvider {
 

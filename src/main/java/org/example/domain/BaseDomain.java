@@ -1,7 +1,7 @@
 package org.example.domain;
 
-import com.avaje.ebean.Model;
-import com.avaje.ebean.annotation.TenantId;
+import io.ebean.Model;
+import io.ebean.annotation.TenantId;
 
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;

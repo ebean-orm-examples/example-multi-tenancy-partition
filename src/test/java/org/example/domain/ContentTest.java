@@ -1,6 +1,6 @@
 package org.example.domain;
 
-import com.avaje.ebean.Ebean;
+import io.ebean.Ebean;
 import org.example.bootstrap.UserContext;
 import org.testng.annotations.Test;
 
@@ -31,6 +31,7 @@ public class ContentTest extends BaseTestCase {
     bean.setBody("Meh");
     bean.save();
 
+    bean.delete();
 
     UserContext.set("fi", "ten_2");
 

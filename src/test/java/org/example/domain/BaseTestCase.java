@@ -1,6 +1,6 @@
 package org.example.domain;
 
-import com.avaje.ebean.EbeanServer;
+import io.ebean.EbeanServer;
 import org.example.bootstrap.BootstrapEbean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -17,9 +17,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.avaje.ebean</groupId>
+            <groupId>io.ebean</groupId>
             <artifactId>ebean</artifactId>
-            <version>9.4.2</version>
+            <version>10.4.2-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -48,7 +48,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <tiles>
-                        <tile>org.avaje.ebean.tile:enhancement:1.2</tile>
+                        <tile>io.ebean.tile:enhancement:2.8</tile>
                     </tiles>
                 </configuration>
             </plugin>
