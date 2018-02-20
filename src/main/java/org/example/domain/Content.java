@@ -3,7 +3,7 @@ package org.example.domain;
 import javax.persistence.Entity;
 
 @Entity
-public class Content extends BaseDomain {
+public class Content extends TenantDomain {
 
   String title;
   String byline;

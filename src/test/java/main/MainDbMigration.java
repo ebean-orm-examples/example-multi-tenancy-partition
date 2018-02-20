@@ -1,6 +1,6 @@
 package main;
 
-import io.ebean.Platform;
+import io.ebean.annotation.Platform;
 import io.ebean.dbmigration.DbMigration;
 
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class MainDbMigration {
 
-  public static void main(String[] args) throws IOException, InterruptedException {
+  public static void main(String[] args) throws IOException {
 
     // optionally specify the version and name
     //System.setProperty("ddl.migration.version", "1.2_33");
@@ -19,7 +19,7 @@ public class MainDbMigration {
     // generate a migration using drops from a prior version
     //System.setProperty("ddl.migration.pendingDropsFor", "1.1");
 
-    DbMigration dbMigration = new DbMigration();
+    DbMigration dbMigration = DbMigration.create();
     dbMigration.setPlatform(Platform.POSTGRES);
     // generate the migration ddl and xml
     dbMigration.generateMigration();

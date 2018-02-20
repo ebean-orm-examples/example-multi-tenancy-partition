@@ -13,9 +13,6 @@ public abstract class BaseDomain extends Model {
   @Id
   Long id;
 
-  @TenantId
-  String tenantId;
-
   @Version
   Long version;
 
@@ -25,14 +22,6 @@ public abstract class BaseDomain extends Model {
 
   public void setId(Long id) {
     this.id = id;
-  }
-
-  public String getTenantId() {
-    return tenantId;
-  }
-
-  public void setTenantId(String tenantId) {
-    this.tenantId = tenantId;
   }
 
   public Long getVersion() {
