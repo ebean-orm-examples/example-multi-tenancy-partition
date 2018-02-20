@@ -1,9 +1,12 @@
 package org.example.domain;
 
+import org.example.domain.finder.ContentFinder;
 import javax.persistence.Entity;
 
 @Entity
 public class Content extends TenantDomain {
+
+  public static final ContentFinder find = new ContentFinder();
 
   String title;
   String byline;

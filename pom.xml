@@ -17,9 +17,15 @@
     <dependencies>
 
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <dependency>
             <groupId>io.ebean</groupId>
             <artifactId>ebean</artifactId>
-            <version>11.10.6</version>
+            <version>11.11.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -30,8 +36,8 @@
 
         <dependency>
             <groupId>org.avaje.composite</groupId>
-            <artifactId>composite-testing</artifactId>
-            <version>3.1</version>
+            <artifactId>composite-testng</artifactId>
+            <version>4.1</version>
             <scope>test</scope>
         </dependency>
 
