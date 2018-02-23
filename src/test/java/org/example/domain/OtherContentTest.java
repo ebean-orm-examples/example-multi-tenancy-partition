@@ -1,6 +1,7 @@
 package org.example.domain;
 
 
+import io.ebean.Ebean;
 import org.example.bootstrap.UserContext;
 import org.testng.annotations.Test;
 
@@ -47,6 +48,13 @@ public class OtherContentTest extends BaseTestCase {
 				.findList();
 
 		assertThat(contents).hasSize(2);
+
+		OtherContent one = contents.get(0);
+		one.setTitle("mod foo");
+		Ebean.save(one);
+
+		//Ebean.deleteAll(OtherContent.class, Arrays.asList(content1.getId(), content0.getId()));
+		Ebean.delete(OtherContent.class, content1.getId());
 	}
 
 }
